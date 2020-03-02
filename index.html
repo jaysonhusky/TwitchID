@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Twitch Grab ID</title>    
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+	<body>
+	<div id="progress"></div>
+	<div class="center">
+		<div id="register">
+			<i id="progressButton" class="ion-android-arrow-forward next"></i>
+			<div id="inputContainer">
+				<input id="inputField" name="q"  required autofocus />
+				<label id="inputLabel"></label>
+				<div id="inputProgress"></div>
+			</div>
+		</div>
+		<h1 id="gerd"></h1> 
+	</div>
+	<!-- Older code, to  be removed in V2 -->
+	<div style="color: gray; font-family: Arial, serif; width: 50%; margin: 0 auto; display:none;">
+		<img src="img/twitch.png" style="text-align: center; width: 150px;"/><br><br>
+		<input type="text" id="q" name="q" style="text-align: center; width: 150px" placeholder="username or user id" autocomplete=off /><br>
+		<div style="text-align: center;">
+			<small>Detected: <span id="detected"></span> <a href="#" title="click to manually switch between username and user id" id="switch">&#8644;</a><br/></small>
+			<div id="result" style="display: none;">
+				<b id="response"></b> <a id="copy" href="#">copy</a><br/>
+			</div>
+			<small id="error" style="color: red;"></small>
+			<small id="success" style="color: green;"></small>
+			<small id="copied" style="color: blue;"></small>
+		</div>
+	</div>
+	<script src="js/i.js"></script>
+	<script src="js/i2.js"></script>
+    </body>
+</html>
